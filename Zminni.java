@@ -2,15 +2,16 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Zminni{
+public class Zminni extends Main{
 
-    Scanner scan = new Scanner(System.in);
-    double a = scan.nextDouble();
-    double b = scan.nextDouble();
-
+    double a;
+    double b;
     double result;
 
+    public Zminni(double a, double b, double result) {
+        this.a = a;
+        this.b = b;
+        this.result = result;
 
-    public Zminni(double a, double b) {
     }
 }
