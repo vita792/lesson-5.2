@@ -10,28 +10,33 @@ public class Main  {
 	System.out.println("Calculate: ");
 	Scanner scan = new Scanner(System.in);
 	double a = scan.nextDouble();
-	String action = scan.next();
+	char action = scan.next().charAt(0);
 	double b = scan.nextDouble();
-
-
+	Zminni var = new Zminni();
+	var.a = a;
+	var.b = b;
 
 
 	switch (action){
-		case "+":
+		case '+':
 			Dodavannja addition = new Dodavannja();
-			System.out.println(addition.result();
-		break;
-		case "-":
+			addition.action(a, b);
+			System.out.println(addition.action(a, b));
+       		break;
+		case '-':
 			Vidnimannja subtraction = new Vidnimannja();
-			System.out.println(subtraction);
+			subtraction.action(a, b);
+			System.out.println(subtraction.action(a, b));
 			break;
-		case "*":
+		case '*':
 			Mnogennja multiplication = new Mnogennja();
-			System.out.println(multiplication);
+			multiplication.action(a, b);
+			System.out.println(multiplication.action(a, b));
 			break;
-		case "/":
+		case '/':
 			Dilennja division = new Dilennja();
-			System.out.println(division);
+			division.action(a, b);
+			System.out.println(division.action(a, b));
 			break;
 	};
 

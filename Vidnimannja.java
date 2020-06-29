@@ -1,10 +1,9 @@
 package com.company;
 
-public class Vidnimannja implements Action {
-    @Override
-    public double result(double a, double b) {
-        double result =  a - b;
-        return result;
+public class Vidnimannja extends Zminni implements Action {
 
+    @Override
+    public double action(double a, double b) {
+        return a - b;
     }
 }
