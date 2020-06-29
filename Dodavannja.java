@@ -1,10 +1,9 @@
 package com.company;
 
-public class Dodavannja implements Action {
+public class Dodavannja extends Zminni implements Action {
 
     @Override
-    public double result(double a, double b) {
-        double result =  a + b;
-        return result;
-        }
+    public double action(double a, double b) {
+        return a + b;
+    }
 }
